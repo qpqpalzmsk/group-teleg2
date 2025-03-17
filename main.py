@@ -18,8 +18,8 @@ from telethon.tl.functions.channels import JoinChannelRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
 
 # 텔레그램에서 발급받은 값 입력
-api_id = 24818098
-api_hash = 'b0aa8c6bf0278f881d75857fc4ee22b1'
+api_id = 23652436
+api_hash = '89a52778283138d74d20b96a313ad913'
 
 # 세션 이름 지정 (원하는 이름, 예: "my_session")
 session_name = 'my_session'
@@ -59,7 +59,7 @@ async def main():
             # -------------------------------------------
             # 2) 가입 후 대기 (과도한 가입으로 인한 스팸 판정 방지)
             # -------------------------------------------
-            wait_time = random.randint(300, 600)  # 5~10분 사이 랜덤 대기 예시
+            wait_time = random.randint(180, 300)  # 5~10분 사이 랜덤 대기 예시
             print(f'[-] 다음 그룹 가입 전 {wait_time}초 대기 중...')
             await asyncio.sleep(wait_time)
 
